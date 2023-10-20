@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 420px;
+    height: 250px;
+    color: white;
+    background-color:rgba(187, 12, 240, 0.699) ;
+    box-shadow:-9px 9px 13px 3px black;
+    border:2px solid gray;
+}
+.container h1{
+    text-align: center;
+    padding:5px ;
+
+}
+.container .inputbox{
+    width: 100%;
+    height: 30px;
+    margin:10px 0;
+    position: relative;
+}
+.inputbox input{
+    width: 100%;
+    height:100%;
+    border:none;
+    outline:none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color:white;
+    padding:10px 45px 10px 20px;
+}
+.inputbox input::placeholder{   
+     color: white;
+
+}
+.inputbox i{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);  
+}
+.container .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 15px;
+}
+.remember-forgot a{
+    color:#fff;
+    margin-right:3px;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.container .btn{
+    width:100%;
+    height:40px;
+    font-size:20px;
+    border:none;
+    outline:none;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    margin:10px 0;
+}
+.container .btn:hover{
+    background-color: rgba(179, 167, 167, 0.806);
+    color:purple;
+}
+.container .register-link{
+    margin:0 10px;
+    display:flex;
+    justify-content: space-between;
+}
+.container .register-link a{
+    color:white;
+    text-decoration: none;
+    margin-right:5px;
+}
+.register-link a:hover{
+    text-decoration: underline;
+    
+}
