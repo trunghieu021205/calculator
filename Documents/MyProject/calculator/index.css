@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(48, 75, 42);
+    display: grid;
+    place-items: center;
+}
+.calculator{
+    width:40%;
+    padding:0.5rem 1rem 1rem 1rem;
+    background-color: rgb(46, 45, 45);
+    border:0.2rem solid black;
+    text-align: center;
+    border-radius:1rem;
+}
+button{
+    width:5rem;
+    height:3rem;
+    font-size:1rem;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(127, 130, 134);
+}
+h2{
+    color:aliceblue;
+    font-size:2rem;
+}
+#result{
+    display: block;
+    text-align: right;
+    width:100%;
+    font-weight: 600;
+}
+.screen{
+    overflow: hidden;
+    background-color: rgb(121, 174, 122);
+    height:100%;
+    width:100%;
+    border-radius: 0.5rem;
+    font-size:2rem;
+    box-shadow: inset rgb(78, 77, 77) 0px 0px 7px 1px;
+}
+.display{
+    height:100%;
+    width:100%;
+    padding: 1rem 1rem 0.5rem 1rem;
+
+}
+input{
+    background: none;
+    outline: none;
+    border:none;
+    width:100%;
+    font-weight:500;
+    pointer-events: none;
+    font-size:2rem;
+    
+}
+#btn-left{
+    border-radius: 100% 0 0 100%;
+}
+#btn-right{
+    border-radius:0 100% 100% 0;
+}
+.option{
+    margin-top:1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    margin-top:1rem;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 1rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+#btn-on{
+    background-color: red;
+}
+#btn-off{
+    background-color: rgb(221, 236, 79);
+}
+#btn-del{
+    background-color: rgb(0, 4, 255);
+}
+#btn-ac{
+    background-color: rgb(0, 4, 255);
+}
+#btn-on:hover{
+    background-color: rgb(67, 2, 2);
+}
+#btn-off:hover{
+    background-color: rgb(65, 70, 23);
+}
+#btn-del:hover{
+    background-color: rgb(1, 2, 60);
+}
+#btn-ac:hover{
+    background-color: rgb(1, 2, 60);
+}

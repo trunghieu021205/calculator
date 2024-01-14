@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <h2 class="label">CASIO</h2>
+        <div class="screen">
+            <div class="display" id="display" data-status="off"></div>
+        </div>
+        <div class="option">
+            <button class="btn-off" id="btn-off" >
+                OFF
+            </button>
+            <div>
+                <button class="left" id="btn-left"></button>
+                <button class="right" id="btn-right"></button>
+            </div>
+            <button class="btn-on" id="btn-on">
+                ON
+            </button>
+        </div>
+        <div class="input" id="input">
+            <div class="row">
+                <button data-value="1" onclick="addValue(this)">1</button>
+                <button data-value="2" onclick="addValue(this)">2</button>
+                <button data-value="3" onclick="addValue(this)">3</button>
+                <button id="btn-del" data-value="del" onclick="addValue(this)">DEL</button>
+                <button id="btn-ac" data-value="ac" onclick="addValue(this)">AC</button>
+            </div>
+            <div class="row">
+                <button  data-value="4" onclick="addValue(this)">4</button>
+                <button  data-value="5" onclick="addValue(this)">5</button>
+                <button  data-value="6" onclick="addValue(this)">6</button>
+                <button  data-value="+" onclick="addValue(this)"><i class="fa-solid fa-regular fa-plus"></i></button>
+                <button  data-value="-" onclick="addValue(this)"><i class="fa-solid fa-regular fa-minus"></i></button>
+            </div>
+            <div class="row">
+                <button  data-value="7" onclick="addValue(this)">7</button>
+                <button  data-value="8" onclick="addValue(this)">8</button>
+                <button  data-value="9" onclick="addValue(this)">9</button>
+                <button  data-value="*" onclick="addValue(this)"><i class="fa-solid fa-regular fa-xmark"></i></button>
+                <button  data-value="/" onclick="addValue(this)"><i class="fa-solid fa-divide"></i></button>
+            </div>
+            <div class="row">
+                <button  data-value="0" onclick="addValue(this)">0</button>
+                <button  data-value="." onclick="addValue(this)">.</button>
+                <button  data-value="%" onclick="addValue(this)">%</button>
+                <button  data-value="Ans" onclick="addValue(this)">Ans</button>
+                <button id="btn-eq"><i class="fa-solid fa-equals"></i></button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/aec91c62eb.js" crossorigin="anonymous"></script>
+</body>
+</html>
